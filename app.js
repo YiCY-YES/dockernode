@@ -1,4 +1,4 @@
-var express = require('express');
+﻿var express = require('express');
 // var expressHandlebars = require('express-handlebars');
 var http = require('http');
 var fs = require('fs');
@@ -31,25 +31,13 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname+'/index.html');
 });
 
-// app.get('/static/js/main.js', function(req, res) {
-//     res.sendFile(__dirname+'/static/js/main.js');
-// });
+
 
 // app.get('/favicon.ico', function(req, res) {
 //     res.sendFile(__dirname+'/favicon.ico');
 // });
 
-// app.get('/static/css/main.css', function(req, res) {
-//   res.sendFile(__dirname+'/static/css/main.css');
-// });
 
-// app.get('/static/css/ionicons.min.css', function(req, res) {
-//   res.sendFile(__dirname+'/static/css/ionicons.min.css');
-// });
-
-// app.get('/static/fonts/ionicons.ttf', function(req, res) {
-//   res.sendFile(__dirname+'/static/fonts/ionicons.ttf');
-// });
 
 http.Server(app).listen(PORT, function() {
     console.log("HTTP server listening on port %s", PORT);
